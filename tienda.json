@@ -1,0 +1,21 @@
+{
+    "tienda":
+        {
+            "videojuegos":[
+                {
+                    "nombre":"The Legend of Zelda: Breath of the Wild",
+                    "precio":59.99,
+                    "plataforma":"Nintendo Switch"
+                },
+                {
+                    "nombre":"Elder ring",
+                    "precio": 49.95,
+                    "platadormas":[
+                        "PC",
+                        "PS5",
+                        "Xbox Series X"
+                    ]
+                }
+            ]
+        }
+} 

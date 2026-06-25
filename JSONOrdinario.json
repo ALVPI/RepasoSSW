@@ -1,0 +1,52 @@
+{
+    "usuarios":[
+        {
+            "nombre": "Pepe",
+            "apellido":"Botella",
+            "corre":"test@mail.com",
+            "series":[
+                {
+                    "titulo":"The Mandalorina",
+                    "fecha":"2019",
+                    "temporadas":3,
+                    "generos":[
+                        "accion",
+                        "drama",
+                        "aventura"
+                    ]
+                },
+                {
+                    "titulo":"The last of US",
+                    "fecha":"2020",
+                    "temporadas":2,
+                    "generos":[
+                        "drama",
+                        "accion",
+                        "postApocaliptico"
+                    ]
+                }
+            ],
+            "peliculas":[
+                {
+                    "titulo":"Lalaland",
+                    "fecha":"2016",
+                    "director":"James Wan",
+                    "generos":[
+                        "musical",
+                        "drama",
+                        "romance"
+                    ]
+                },
+                {
+                    "titulo":"Whiplash",
+                    "fecha": "2014",
+                    "director":"Damien Chazelle",
+                    "generos":[
+                        "drama"
+                    ]
+                }
+            ]
+    
+        }
+    ]
+}

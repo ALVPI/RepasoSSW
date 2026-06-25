@@ -1,0 +1,14 @@
+{
+    "biblioteca":[
+        {
+            "titulo": "El nombre del viento",
+            "autor": "Patrick Rothfuss",
+            "año": 2007,
+            "disponible": true,
+            "generos":[
+                "fantasía",
+                "aventura"
+            ]
+        }
+    ]
+}
