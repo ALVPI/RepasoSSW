@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo de la Asignatura</title>
+</head>
+<body>
+    <h1>Ejemplo de todos los elementos de formulario</h1>
+    
+    <!-- El formulario se define mediante <form>. Los atributos method y action indican 
+         cómo y a dónde se envían los datos al servidor. -->
+    <form method="post" action="procesarFormulario">
+
+        <!-- CAMPO OCULTO: Sirve para almacenar información que no se visualiza, 
+             útil por las limitaciones de estado de HTTP. -->
+        <input type="hidden" name="origen" value="web">
+
+        <fieldset>
+            <legend>Campos de texto estándar e información sensible</legend>
+            <p>
+                <!-- Atributos HTML5 añadidos: placeholder, autocomplete, required -->
+                <label for="nombre">Nombre (Texto estándar):</label>
+                <input type="text" id="nombre" name="nombre" size="25" maxlength="30" placeholder="Escriba su nombre" required autocomplete="off">
+            </p>
+            <p>
+                <!-- Password: Los caracteres tecleados se sustituyen por asteriscos -->
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" size="25">
+            </p>
+            <p>
+                <!-- Textarea: Permite introducir texto en múltiples líneas -->
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="36">Introduzca sus comentarios.</textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Campos de selección</legend>
+            <p>
+                <!-- Checkbox: Permiten selección múltiple (o individual) de opciones -->
+                <strong>Aspectos favorables (Checkbox):</strong><br>
+                <input type="checkbox" id="check1" name="thingsliked" value="Design">
+                <label for="check1">Diseño del sitio</label>
+                
+                <input type="checkbox" id="check2" name="thingsliked" value="Links">
+                <label for="check2">Enlaces</label>
+            </p>
+            <p>
+                <!-- Radio: Opciones excluyentes. Solo uno del grupo puede estar seleccionado -->
+                <strong>¿Cómo llegaste a este sitio web? (Radio):</strong><br>
+                <input type="radio" id="radio1" name="howtosite" value="search engine" checked>
+                <label for="radio1">Buscador</label>
+                
+                <input type="radio" id="radio2" name="howtosite" value="link">
+                <label for="radio2">Enlace desde otro sitio web</label>
+            </p>
+            <p>
+                <!-- Select y Option: Lista desplegable de elementos -->
+                <label for="rating">Valore el sitio web (Select):</label>
+                <select id="rating" name="rating">
+                    <option selected>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Carga de archivos</legend>
+            <p>
+                <!-- File: Para carga de archivos -->
+                <label for="archivo">Suba su currículum (File):</label>
+                <input type="file" id="archivo" name="archivo">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nuevos tipos de elementos HTML5</legend>
+            <!-- Tipos añadidos en HTML5 especificados en los apuntes -->
+            <p>
+                <label for="busqueda">Búsqueda (search):</label>
+                <input type="search" id="busqueda" name="busqueda">
+            </p>
+            <p>
+                <!-- Incluye el atributo pattern para validación con expresiones regulares -->
+                <label for="telefono">Teléfono (tel):</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[8-16]{9}">
+            </p>
+            <p>
+                <label for="sitiourl">Página web (url):</label>
+                <input type="url" id="sitiourl" name="sitiourl">
+            </p>
+            <p>
+                <label for="correo">Correo electrónico (email):</label>
+                <input type="email" id="correo" name="correo">
+            </p>
+            <p>
+                <label for="numero">Edad (number):</label>
+                <input type="number" id="numero" name="numero">
+            </p>
+            <p>
+                <label for="rango">Nivel de satisfacción (range):</label>
+                <input type="range" id="rango" name="rango">
+            </p>
+            <p>
+                <label for="fecha">Día (date):</label>
+                <input type="date" id="fecha" name="fecha">
+            </p>
+            <p>
+                <label for="mes">Mes (month):</label>
+                <input type="month" id="mes" name="mes">
+            </p>
+            <p>
+                <label for="semana">Semana (week):</label>
+                <input type="week" id="semana" name="semana">
+            </p>
+            <p>
+                <label for="tiempo">Hora exacta (time):</label>
+                <input type="time" id="tiempo" name="tiempo">
+            </p>
+            <p>
+                <label for="fechatiempo">Fecha y hora (datetime):</label>
+                <input type="datetime" id="fechatiempo" name="fechatiempo">
+            </p>
+            <p>
+                <label for="color">Color favorito (color):</label>
+                <input type="color" id="color" name="color">
+            </p>
+        </fieldset>
+
+        <!-- Botones de acción del formulario -->
+        <p>
+            <!-- Botón genérico (normalmente necesita Javascript para hacer algo) -->
+            <input type="button" value="Botón genérico">
+            
+            <!-- Restaura los valores por defecto del formulario -->
+            <input type="reset" value="Limpiar Formulario">
+            
+            <!-- Envía la información al servidor para ser procesada -->
+            <input type="submit" value="Enviar Datos">
+        </p>
+
+    </form>
+</body>
+</html>
