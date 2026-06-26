@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT torneo (partido*)>
+<!ELEMENT partido (encuentro, resultado, goles*, arbitro,tarjetas*)>
+<!ATTLIST partido
+  numero CDATA #REQUIRED
+>
+<!ELEMENT encuentro (local, visitante)>
+<!ELEMENT goles (marcador, goleador, minuto)>
+<!ATTLIST goles
+      tipo (normal | penalti | propiaPuerta) "normal"
+>
+<!ELEMENT tarjetas (nombre, minuto)>
+<!ATTLIST tarjetas
+      tipo (amarilla | roja ) #REQUIRED
+>
+<!ELEMENT resultado (#PCDATA)>
+<!ELEMENT arbitro (#PCDATA)>
+<!ELEMENT local (#PCDATA)>
+<!ELEMENT visitante (#PCDATA)>
+<!ELEMENT marcador (#PCDATA)>
+<!ELEMENT goleador (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT minuto (#PCDATA)>

@@ -1,0 +1,25 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<!ELEMENT factura (datos_empresa, datos_cliente, linea+,totales)>
+<ATTLIST factura 
+    numero CDATA #REQUIRED 
+    fecha CDATA #REQUIRED
+>
+<!ELEMENT linea (referencia, descripcion, cantidad, precio, iva, importe)>
+<!ELEMENT datos_empresa (nombre, direccion, ciudad, cp, cif)>
+<!ELEMENT datos_cliente (nombre, direccion, ciudad, cp)>
+<!ELEMENT totales (base_imponible, porcentaje_iva, cuota_iva, total_factura)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT base_imponible (#PCDATA)>
+<!ELEMENT porcentaje_iva (#PCDATA)>
+<!ELEMENT cuota_iva (#PCDATA)>
+<!ELEMENT total_factura (#PCDATA)>

@@ -1,0 +1,37 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<!DOCTYPE torneo SYSTEM "torneo.dtd">
+<torneo>
+<partido numero="1">
+    <encuentro>
+      <local>Athletic</local>
+      <visitante>Real Madrid</visitante>
+    </encuentro>
+    <resultado>1-0</resultado>
+    <goles>
+      <marcador>1-0</marcador>
+      <goleador>Aduriz</goleador>
+      <minuto>26</minuto>
+    </goles>
+    <arbitro>Undiano Mallenco</arbitro>
+    <tarjetas tipo="amarilla"> 
+      <nombre>Kross</nombre>
+      <minuto>12</minuto>
+    </tarjetas>
+    <tarjetas tipo="amarilla">
+      <nombre>Aduriz</nombre>
+      <minuto>24</minuto>
+    </tarjetas>
+    <tarjetas tipo="amarilla">
+      <nombre>Illaramendi</nombre>
+      <minuto>36</minuto>
+    </tarjetas tipo="amarilla">
+      <nombre>Illaramendi</nombre>
+     <minuto>92</minuto>
+    </tarjetas>
+    <tarjetas>
+        <nombre>Isco</nombre>
+        <minuto>80</minuto>
+    </tarjetas>
+   
+  </partido>
+</torneo>

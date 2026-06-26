@@ -1,0 +1,56 @@
+<?xml version="1.0" enconding="UTF-8">
+<!DOCTYPE factura SYSTEM "factura.dts">
+<factura numero="999" fecha="12-01-2005">
+  <datos_empresa>
+    <nombre> Equipos Digales S.L.</nombre>
+    <direccion>Av. Manzano s/n</direccion>
+    <ciudad>Madrid</ciudad>
+    <cp>28015</cp>
+    <cif>Q-9876543</cif>
+  </datos_empresa>
+  <datos_cliente>
+    <nombre>Darío Bueno Guitierrez</nombre>
+    <direccion>Av. Oporto nº7</direccion>
+    <ciudad>Madrid</ciudad>
+    <cp>28043</cp>
+  </datos_cliente>
+  <linea>
+    <referencia>MI93</referencia>
+    <descripcion>PENTIUM IV</descripcion>
+    <cantidad>1</cantidad>
+    <precio>230</precio>
+    <iva>16</iva>
+    <importe>266,80</importe>
+  </linea>
+  <linea>
+    <referencia>MI84</referencia>
+    <descripcion>PLACA BASE P4 </descripcion>
+    <cantidad>1</cantidad>
+    <precio>180</precio>
+    <iva>16</iva>
+    <importe>208,80</importe>
+  </linea>
+  <linea>
+    <referencia>ME32</referencia>
+    <descripcion>DIMM DDR 512MB</descripcion>
+    <cantidad>2</cantidad>
+    <precio>40</precio>
+    <iva>16</iva>
+    <importe>92,80</importe>
+  </linea>
+  <linea>
+    <referencia>HDA7</referencia>
+    <descripcion>DISCO DURO 250GB</descripcion>
+    <cantidad>4</cantidad>
+    <precio>120</precio>
+    <iva>16</iva>
+    <importe>556,80</importe>
+  </linea>
+  <totales>
+    <base_imponible>970,00</base_imponible>
+    <porcentaje_iva>16</porcentaje_iva>
+    <cuota_iva>155,20</cuota_iva>
+    <total_factura>1125,20</total_factura>
+  </totales>
+</factura>
+  
