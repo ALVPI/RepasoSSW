@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Examen</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="titulo_rojo">FORMULARIO RESEÑA</h1>
+        <form action="resena.jsp" method="post">
+            <p>
+                <label for="user">Usuario: </label>
+                <input type="text" id="pass" name="pass" placeholder="Ej: Manolo" required>
+            </p>
+            <p>
+                <label for="pass">Contraseña: </label>
+                <input type="password" id="pass" name="pass" placeholder="Ej: manolo123" required>
+            </p>
+            <p>
+                <label for="titulo">Titulo: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: La bella y la bestia" required>
+            </p>
+            <p>
+                <label for="coment">Comentario: </label>
+                <textarea id="coment" name="coment" placeholder="Comentario sobre la pelicula"></textarea>
+            </p>
+            <p>
+                <label>Tipo: </label>
+                <input type="radio" id="pelicula" name="tipo" value="pelicula"checked>
+                <label for="pelicula">Pelicula</label>
+                <input type="radio" id="serie" name="tipo" value="serie">
+                <label for="serie">Serie</label>
+
+            </p>
+            <p>
+                <label>Donde la has visto: </label>
+                <input type="checkbox" id="casa" name="visto" value="casa">
+                <label for="ordenador">Casa</label>
+                <input type="checkbox" id="cine" name="visto" value="cine">
+                <label for="movil">Cine</label>
+                <input type="checkbox" id="otros" name="visto" value="otros">
+                <label for="tablet">Otros</label>
+            </p>
+            <p>
+                <label>Puntuacion: </label>
+                <select name="score">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </p>
+            <p>
+                <label for="tipo">La recomendarias: </label>
+                <input type="radio" id="si" name="recomendar" value="si" required>
+                <label for="si">Si</label>
+                <input type="radio" id="no" name="recomendar" value="no" required>
+                <label for="no">No</label>
+
+            </p>
+            <p>
+                <input type="submit" value="Entregar">
+                <input type="reset" value="Limpiar">
+            </p>
+            
+        </form>
+        <!-- Contenido a parte del formulario que puede entrar sobre html-->
+        <p>
+            <label for="imagen">Ejemplo imagen: </label>
+            <img href="logo.jpg" alt="Logo pagina" id="imagen">
+        </p>
+        <p>
+            <label for="enlace">Ejemplo enlace: </label>
+            <a href="ejemplo.html" id="enlace">Otras webs</a>
+        </p>
+        
+    </body>
+</html>
+
